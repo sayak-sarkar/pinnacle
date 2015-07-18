@@ -1475,7 +1475,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 800;
+		font-weight: 200;
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1694,7 +1694,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #f20a0a;
 		}
 
 	.select-wrapper {
@@ -1805,7 +1805,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #f20a0a;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2414,7 +2414,7 @@
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #f20a0a;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2613,7 +2613,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: rgba(242,10,10,0.85);
 			color: #c7ebe8;
 		}
 
@@ -2623,6 +2623,7 @@
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
 				color: #ffffff;
+				font-weight: 200;
 			}
 
 			.wrapper.style1 hr {
@@ -2678,7 +2679,7 @@
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #f20a0a;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -2769,16 +2770,17 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #6164a4;
-			color: #d3d4e4;
+			background-color: rgba(255,255,255,0.5);
+			color: #222;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
-				color: #ffffff;
+				color: #000;
 			}
 
 			.wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-				color: #ffffff;
+				color: #000;
+				font-weight: 200
 			}
 
 			.wrapper.style3 hr {
@@ -2802,7 +2804,7 @@
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #222;
 			}
 
 			.wrapper.style3 label {
@@ -2823,7 +2825,7 @@
 
 			.wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
-				color: #d3d4e4;
+				color: #222;
 			}
 
 				.wrapper.style3 input[type="checkbox"] + label:before,
@@ -3122,7 +3124,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #f20a0a;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3157,6 +3159,7 @@
 					color: inherit;
 					display: block;
 					font-size: 0.8em;
+					font-weight: 600;
 					letter-spacing: 0.225em;
 					outline: 0;
 					text-decoration: none;
@@ -3212,7 +3215,7 @@
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: rgba(10,0,0,0.75);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3578,10 +3581,10 @@
 
 	#main > header {
 		padding: 6em 0 5em 0;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(232,10,10,0.85), rgba(232,10,10,1)), url("../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(232,10,10,0.85), rgba(232,10,10,1)), url("../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(232,10,10,0.85), rgba(232,10,10,1)), url("../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(232,10,10,0.85), rgba(232,10,10,1)), url("../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3747,3 +3750,35 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*                                            CUSTOM DEFINITIONS                                                    */
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1027px) {
+	.box {
+		display: inline-block;
+		float: left;
+		width: 33%;
+	}
+
+	.box-caption {
+		box-shadow: 0 2px 2px -2px gray;
+		min-height: 70px;
+		vertical-align: middle;
+	}
+
+	.box-content {
+		margin-top: 20px;
+	}
+
+	.tools ol {
+		padding-left: 10%;
+	}
+
+	.tools li {
+		float: left;
+		width: 50%;
+	}
+}
