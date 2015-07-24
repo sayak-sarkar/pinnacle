@@ -3760,7 +3760,7 @@
 	.box {
 		display: inline-block;
 		float: left;
-		width: 33%;
+		width: 50%;
 	}
 
 	.box-caption {
@@ -3781,4 +3781,17 @@
 		float: left;
 		width: 50%;
 	}
+}
+
+.contact {
+	margin: 25px;
+}
+
+.contact-icon {
+	min-width: 100px;
+	text-align: center;
+}
+
+.contact-item {
+	padding-top: 8px;
 }
